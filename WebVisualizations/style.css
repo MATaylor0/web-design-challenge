@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(168, 167, 167);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  
+h1 {
+    padding-left: 25px;
+    color: teal;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+}
+
+.container .image {
+width: 50%;
+}
+
+.container img {
+width: calc(100% - (20px * 2));
+margin: 20px;
+}
+
+p {
+    padding-left: 50px;
+    padding-right: 20px;
+    line-height: 2;
+}
+hr {
+    padding-left: 25px;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+.row {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+}
