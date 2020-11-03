@@ -1,20 +1,35 @@
 body {
-    background-color: rgb(168, 167, 167);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: gainsboro;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
   
 h1 {
     padding-left: 25px;
-    color: teal;
+    color: lime;
+    font-weight: bold;
+}
+
+h5 {
+    padding-bottom: 5px;
+    text-align: center;
+    text-indent: -110px;
+    color: lime;
+    font-weight: bold;
 }
 
 .container {
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container .image {
-width: 50%;
+    border: 3px solid white;
+    width: 50%;
+}
+
+.container .image:hover {
+    border: 3px solid lime;
+    width: 50%;
 }
 
 .container img {
@@ -23,12 +38,9 @@ margin: 20px;
 }
 
 p {
-    padding-left: 50px;
+    padding-left: 20px;
     padding-right: 20px;
     line-height: 2;
-}
-hr {
-    padding-left: 25px;
 }
 
 .jumbotron {
@@ -41,8 +53,32 @@ hr {
 }
 
 .navbar-brand {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    background: lime;
+}
+#hcolour{
     font-weight: bold;
     color: white;
-    background-color: teal;
-    padding: 10px;
+}
+#padimg {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.maxwidth {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    max-width: 1280px;
+    background-color: white;
+}
+
+@media (max-width: 992px) {
+    .navbar-custom {
+        background-color: lime !important;
+    }
 }
